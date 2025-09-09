@@ -50,6 +50,7 @@ const handleCategoryClick = (li, category) => {
 };
 
 const loadPlants = (filterCategory) => {
+  spinner(true);
   const url = "https://openapi.programming-hero.com/api/plants";
   fetch(url)
     .then((res) => res.json())
@@ -112,6 +113,7 @@ const displayPlantsItems = (plants, category) => {
 
     treesContainer.appendChild(div);
   });
+  spinner(false);
 };
 
 const addToCart = (product) => {
@@ -199,6 +201,22 @@ const openPlantModal = (id) => {
   `;
 
   document.getElementById("my_modal_2").showModal();
+};
+
+const spinner = (status) => {
+  if (status == true) {
+    const spinnerContainer = document.getElementById("spinner-container");
+    spinnerContainer.classList.remove("hidden");
+
+    const treesContainer = document.getElementById("trees-container");
+    treesContainer.classList.add("hidden");
+  } else {
+    const treesContainer = document.getElementById("trees-container");
+    treesContainer.classList.remove("hidden");
+
+    const spinnerContainer = document.getElementById("spinner-container");
+    spinnerContainer.classList.add("hidden");
+  }
 };
 
 // initial load
