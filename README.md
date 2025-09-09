@@ -85,7 +85,7 @@
         ```
           Template literals হলো backtick (`) ব্যবহার করে string তৈরি করার নতুন উপায়।
           এর মাধ্যমে variable কে সহজে string এর ভেতরে বসানো যায়। multi - line string সহজে লেখা যায়।
-          কিন্তু string এর মাধ্যমে সহজে েতা করা যায় না
+          কিন্তু string এর মাধ্যমে সহজে তা করা যায় না
         ```
 
 ## ⚙️ Functionalities
