@@ -149,7 +149,7 @@ Display in a 3-column card layout. ( Done )
 
 ## 🔗 Submission
 
-- **Live Link :** https://green-earth-indol.vercel.app/
+- **Live Link :** https://green-earth-osmanzakaria.vercel.app/
 - **GitHub Repository:** https://github.com/osmanzakaria532/green-earth
 
 ---
